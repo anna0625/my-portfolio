@@ -1,7 +1,7 @@
 export const heroSection = {
   title: "Junior Web Developer",
   paragraph: "Create elegant webpages with React.js and TailwindCSS",
-  buttonText: "My Projects",
+  buttonText: "clean code of this webpage.",
 };
 
 export const projectSection = [

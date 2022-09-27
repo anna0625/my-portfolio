@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const Navbar = ({ title }) => {
   const [openHamburger, setOpenHamburger] = useState(false);
+
+  const location = useLocation();
+
+  const pathMatchRoute = (route) => {
+    if (route === location.pathname) {
+      return true;
+    }
+  };
 
   return (
     <nav className="navbar mb-12 shadow-lg text-neutral-content fixed z-50">
@@ -19,26 +27,42 @@ export const Navbar = ({ title }) => {
         <div className="flex-1 px-2 mx-2 hidden md:block">
           <div className="flex justify-end">
             <Link
-              to="/react-web-dev"
-              className="btn btn-ghost stn-sm rounded-btn mr-1"
+              to="/react-projects"
+              className={
+                pathMatchRoute("/react-projects")
+                  ? "btn btn-primary stn-sm rounded-btn mr-1"
+                  : "btn btn-ghost stn-sm rounded-btn mr-1"
+              }
             >
               React Projects
             </Link>
             <Link
-              to="/react-web-dev"
-              className="btn btn-ghost stn-sm rounded-btn mr-1"
+              to="/mini-projects"
+              className={
+                pathMatchRoute("/mini-projects")
+                  ? "btn btn-primary stn-sm rounded-btn mr-1"
+                  : "btn btn-ghost stn-sm rounded-btn mr-1"
+              }
             >
               Mini Projects
             </Link>
             <Link
               to="/python-games"
-              className="btn btn-ghost stn-sm rounded-btn mr-1"
+              className={
+                pathMatchRoute("/python-games")
+                  ? "btn btn-primary stn-sm rounded-btn mr-1"
+                  : "btn btn-ghost stn-sm rounded-btn mr-1"
+              }
             >
               Python Games
             </Link>
             <Link
               to="/nodejs-apis"
-              className="btn btn-ghost stn-sm rounded-btn mr-1"
+              className={
+                pathMatchRoute("/nodejs-apis")
+                  ? "btn btn-primary stn-sm rounded-btn mr-1"
+                  : "btn btn-ghost stn-sm rounded-btn mr-1"
+              }
             >
               Nodejs APIs
             </Link>
@@ -75,22 +99,42 @@ export const Navbar = ({ title }) => {
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <Link to="/react-web-dev" className="">
+                  <Link
+                    to="/react-projects"
+                    className={
+                      pathMatchRoute("/react-projects") ? "text-primary" : null
+                    }
+                  >
                     React Projects
                   </Link>
                 </li>
                 <li>
-                  <Link to="/react-web-dev" className="">
+                  <Link
+                    to="/mini-projects"
+                    className={
+                      pathMatchRoute("/mini-projects") ? "text-primary" : null
+                    }
+                  >
                     Mini Projects
                   </Link>
                 </li>
                 <li>
-                  <Link to="/python-games" className="">
+                  <Link
+                    to="/python-games"
+                    className={
+                      pathMatchRoute("/python-games") ? "text-primary" : null
+                    }
+                  >
                     Python Games
                   </Link>
                 </li>
                 <li>
-                  <Link to="/nodejs-apis" className="">
+                  <Link
+                    to="/nodejs-apis"
+                    className={
+                      pathMatchRoute("/nodejs-apis") ? "text-primary" : null
+                    }
+                  >
                     Nodejs APIs
                   </Link>
                 </li>
