@@ -24,6 +24,7 @@ const Home = () => {
         title={heroSection.title}
         paragraph={heroSection.paragraph}
         buttonText={heroSection.buttonText}
+        buttonLink={heroSection.buttonLink}
       />
       <section className="container mx-auto">
         <div className="mx-auto flex justify-center items-center flex-col md:flex-row md:flex-wrap max-w-5xl">

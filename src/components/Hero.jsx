@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const Hero = ({ title, paragraph, buttonText, extend }) => {
+export const Hero = ({ title, paragraph, buttonText, buttonLink, extend }) => {
   return (
     <div className="hero min-h-screen">
       <div className="hero-content text-center">
@@ -10,7 +10,7 @@ export const Hero = ({ title, paragraph, buttonText, extend }) => {
           <p className="py-6">{paragraph}</p>
           <button className="btn btn-primary">
             <a
-              href="https://github.com/anna0625"
+              href={buttonLink}
               target="_blank"
               rel="noreferrer"
               className="flex items-center"

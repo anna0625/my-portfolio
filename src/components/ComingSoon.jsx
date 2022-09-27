@@ -7,6 +7,7 @@ export const ComingSoon = () => {
       title="Coming Soon"
       paragraph="This section is still being built :>"
       buttonText="My Github"
+      buttonLink="https://github.com/anna0625/"
       extend={
         <svg
           xmlns="http://www.w3.org/2000/svg"
