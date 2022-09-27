@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const Card = ({ count, title, paragraph, buttonText }) => {
+export const Card = ({ id, title, paragraph, buttonText }) => {
   return (
     <div
       className={
-        count % 2 === 0
-          ? `bg-primary card w-96 text-primary-content my-2 md:mx-2`
-          : `bg-secondary card w-96 text-primary-content my-2 md:mx-2`
+        id % 2 === 0
+          ? `bg-primary card w-80 text-primary-content my-2 md:mx-2`
+          : `bg-secondary card w-80 text-primary-content my-2 md:mx-2`
       }
     >
       <div className="card-body">
@@ -22,14 +22,14 @@ export const Card = ({ count, title, paragraph, buttonText }) => {
 };
 
 Card.defaultProps = {
-  count: null,
+  id: 0,
   title: "Junior Web Developer",
   paragraph: "Create elegant webpages with HTML/CSS/JS and React.js",
   buttonText: "My Projects",
 };
 
 Card.propTypes = {
-  count: PropTypes.number,
+  id: PropTypes.any,
   title: PropTypes.string,
   paragraph: PropTypes.string,
   buttonText: PropTypes.string,

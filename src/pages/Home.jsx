@@ -5,12 +5,11 @@ import { heroSection, projectSection } from "../data/HomeData";
 
 const Home = () => {
   const cards = [];
-  let count = 0;
-  projectSection.forEach((card) => {
-    count += 1;
+  projectSection.forEach((card, id) => {
     cards.push(
       <Card
-        count={count}
+        key={id}
+        id={id}
         title={card.title}
         paragraph={card.paragraph}
         buttonText={card.buttonText}

@@ -23,8 +23,8 @@ export const Navbar = ({ title }) => {
             to="/"
             className={
               pathMatchRoute("/")
-                ? "text-lg font-bold aling-middle align-middle text-primary"
-                : "text-lg font-bold aling-middle align-middle"
+                ? "text-lg font-bold aling-middle align-middle text-primary btn"
+                : "text-lg font-bold aling-middle align-middle btn btn-ghost"
             }
           >
             {title}
