@@ -1,14 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const Hero = ({ title, paragraph, buttonText }) => {
+export const Hero = ({ title, paragraph, buttonText, extend }) => {
   return (
     <div className="hero min-h-screen">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">{title}</h1>
           <p className="py-6">{paragraph}</p>
-          <button className="btn btn-primary">{buttonText}</button>
+          <button className="btn btn-primary">
+            <a
+              href="https://github.com/anna0625"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center"
+            >
+              {buttonText}
+              {extend}
+            </a>
+          </button>
         </div>
       </div>
     </div>

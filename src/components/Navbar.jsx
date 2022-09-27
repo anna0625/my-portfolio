@@ -19,7 +19,14 @@ export const Navbar = ({ title }) => {
       <div className="container mx-auto">
         {/* Logo */}
         <div className="flex-none px-2 mx-2">
-          <Link to="/" className="text-lg font-bold aling-middle align-middle">
+          <Link
+            to="/"
+            className={
+              pathMatchRoute("/")
+                ? "text-lg font-bold aling-middle align-middle text-primary"
+                : "text-lg font-bold aling-middle align-middle"
+            }
+          >
             {title}
           </Link>
         </div>
