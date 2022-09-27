@@ -26,13 +26,17 @@ export const Hero = ({ title, paragraph, buttonText, buttonLink, extend }) => {
 };
 
 Hero.defaultProps = {
-  title: "Junior Web Developer",
-  paragraph: "Create elegant webpages with HTML/CSS/JS and React.js",
-  buttonText: "My Projects",
+  title: "title",
+  paragraph: "paragraph",
+  buttonText: "button text",
+  buttonLink: "#",
+  extend: null,
 };
 
 Hero.propTypes = {
   title: PropTypes.string,
   paragraph: PropTypes.string,
   buttonText: PropTypes.string,
+  buttonLink: PropTypes.string,
+  extend: PropTypes.any,
 };

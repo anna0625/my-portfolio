@@ -22,12 +22,14 @@ export const Card = ({ count, title, paragraph, buttonText }) => {
 };
 
 Card.defaultProps = {
+  count: null,
   title: "Junior Web Developer",
   paragraph: "Create elegant webpages with HTML/CSS/JS and React.js",
   buttonText: "My Projects",
 };
 
 Card.propTypes = {
+  count: PropTypes.number,
   title: PropTypes.string,
   paragraph: PropTypes.string,
   buttonText: PropTypes.string,
