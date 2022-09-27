@@ -18,7 +18,7 @@ const Home = () => {
   });
 
   return (
-    <>
+    <main>
       <Hero
         title={heroSection.title}
         paragraph={heroSection.paragraph}
@@ -30,7 +30,7 @@ const Home = () => {
           {cards}
         </div>
       </section>
-    </>
+    </main>
   );
 };
 
