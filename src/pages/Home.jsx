@@ -12,6 +12,7 @@ const Home = () => {
         id={id}
         title={card.title}
         paragraph={card.paragraph}
+        buttonLink={card.buttonLink}
         buttonText={card.buttonText}
       />
     );
@@ -26,6 +27,7 @@ const Home = () => {
         buttonLink={heroSection.buttonLink}
       />
       <section className="container mx-auto">
+        <h1 className="text-center mb-2 text-xl font-medium">Project Review</h1>
         <div className="mx-auto flex justify-center items-center flex-col md:flex-row md:flex-wrap max-w-5xl">
           {cards}
         </div>

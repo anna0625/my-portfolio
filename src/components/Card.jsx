@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-export const Card = ({ id, title, paragraph, buttonText }) => {
+export const Card = ({ id, title, paragraph, buttonText, buttonLink }) => {
   return (
     <div
       className={
@@ -14,7 +15,9 @@ export const Card = ({ id, title, paragraph, buttonText }) => {
         <h2 className="card-title">{title}</h2>
         <p className="min-h-12">{paragraph}</p>
         <div className="card-actions justify-end">
-          <button className="btn">{buttonText}</button>
+          <button className="btn">
+            <Link to={buttonLink}>{buttonText}</Link>
+          </button>
         </div>
       </div>
     </div>

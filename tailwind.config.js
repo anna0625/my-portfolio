@@ -9,9 +9,6 @@ module.exports = {
       fontFamily: {
         sans: ["Quicksand"],
       },
-      spacing: {
-        screen: "90vw",
-      },
     },
   },
   plugins: [require("daisyui")],
