@@ -1,5 +1,9 @@
 import React from "react";
 import { CodepenProjects } from "../data/CodepenData";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// AOS.init();
+//data-aos="zoom-in"
 
 export const Codepen = () => {
   const iframes = [];
@@ -26,6 +30,10 @@ export const Codepen = () => {
   });
 
   return (
-    <div className="flex items-center justify-center flex-wrap">{iframes}</div>
+    <>
+      <div className="flex items-center justify-center flex-wrap">
+        {iframes}
+      </div>
+    </>
   );
 };

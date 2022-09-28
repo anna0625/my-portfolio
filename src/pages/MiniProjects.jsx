@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Codepen } from "../components/Codepen";
 import { Spinner } from "../components/Spinner";
+import { FaArrowCircleUp } from "react-icons/fa";
+import { useScrollToTop } from "use-scroll-to-top";
 
 const MiniProjects = () => {
   const [loading, setLoading] = useState(true);
+  const { showScroll, scrollTop } = useScrollToTop({ pageYOffset: 200 });
 
   if (loading) {
     setTimeout(() => {
@@ -16,7 +19,7 @@ const MiniProjects = () => {
       <main
         className={
           !loading
-            ? `mt-32 overflow-x-hidden container scroll-smooth`
+            ? `mt-32 overflow-x-hidden container scroll-smooth relative`
             : `hidden`
         }
       >
@@ -29,6 +32,11 @@ const MiniProjects = () => {
         <section className="mx-auto container min-h-screen">
           <Codepen />
         </section>
+        <FaArrowCircleUp
+          className="fixed bottom-5 right-3 z-50 h-10 w-10 cursor-pointer"
+          onClick={scrollTop}
+          style={{ display: showScroll ? "block" : "block" }}
+        />
       </main>
       {loading ? <Spinner /> : null}
     </>
