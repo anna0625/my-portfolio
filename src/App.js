@@ -12,10 +12,14 @@ function App() {
     <>
       <Router>
         <AnimatedCursor
-          color="58, 191, 248"
+          color="242, 243, 101"
           innerSize={8}
           outerSize={16}
+          innerScale={0.6}
+          outerScale={6}
           clickables={[
+            ".scrolltoup",
+            "label",
             "iframe",
             "a",
             'input[type="text"]',

@@ -8,7 +8,7 @@ export const Hero = ({ title, paragraph, buttonText, buttonLink, extend }) => {
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">{title}</h1>
           <p className="py-6">{paragraph}</p>
-          <button className="btn btn-primary">
+          <button className="btn btn-primary hover:animate-bounce">
             <a
               href={buttonLink}
               target="_blank"

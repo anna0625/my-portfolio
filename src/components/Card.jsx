@@ -15,7 +15,7 @@ export const Card = ({ id, title, paragraph, buttonText, buttonLink }) => {
         <h2 className="card-title">{title}</h2>
         <p className="min-h-12">{paragraph}</p>
         <div className="card-actions justify-end">
-          <button className="btn">
+          <button className="btn hover:animate-bounce">
             <Link to={buttonLink}>{buttonText}</Link>
           </button>
         </div>

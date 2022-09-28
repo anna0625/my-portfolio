@@ -33,7 +33,7 @@ const MiniProjects = () => {
           <Codepen />
         </section>
         <FaArrowCircleUp
-          className="fixed bottom-5 right-3 z-50 h-10 w-10 cursor-pointer"
+          className="fixed bottom-5 right-3 z-50 h-10 w-10 hover:scale-125 transition hover:-translate-y-1 scrolltotop"
           onClick={scrollTop}
           style={{ display: showScroll ? "block" : "block" }}
         />
