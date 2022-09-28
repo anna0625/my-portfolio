@@ -6,7 +6,7 @@ export const Codepen = () => {
 
   CodepenProjects.forEach((project, id) => {
     iframes.push(
-      <div className="group mb-5" key={id}>
+      <div className="group mb-5 mx-auto" key={id}>
         <h1 className="text-center">{project.title}</h1>
         <div className="bg-secondary my-5 px-5 py-2 rounded-lg mx-5">
           <iframe
