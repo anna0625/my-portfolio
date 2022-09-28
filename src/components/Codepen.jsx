@@ -10,7 +10,7 @@ export const Codepen = () => {
         <h1 className="text-center">{project.title}</h1>
         <div className="bg-secondary my-5 px-5 py-2 rounded-lg mx-5">
           <iframe
-            className="h-96 my-3 w-80 md:w-[80vw] md:h-[50vh] shadow-md shadow-red-100 rounded-lg"
+            className="h-96 my-3 w-80 md:w-[70vw] md:h-[70vh] shadow-md shadow-red-100 rounded-lg"
             scrolling="no"
             title={project.title}
             src={project.src}

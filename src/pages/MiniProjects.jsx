@@ -3,7 +3,7 @@ import { Codepen } from "../components/Codepen";
 
 const MiniProjects = () => {
   return (
-    <main className="mt-32">
+    <main className="mt-32 overflow-x-hidden">
       <h1 className="text-center mb-2 text-xl font-medium">
         50 mini projects with HTML/CSS & JS
       </h1>
