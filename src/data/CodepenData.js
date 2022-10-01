@@ -1,53 +1,48 @@
 export const CodepenProjects = [
   {
-    title: "19. Background Slider",
+    title: "18. Background Slider",
     src: "https://codepen.io/anna625/embed/vYjWrgm?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/vYjWrgm",
   },
   {
-    title: "18. Movie App",
+    title: "17. Movie App",
     src: "https://codepen.io/anna625/embed/RwyjRem?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/RwyjRem",
   },
   {
-    title: "17. Drink Water",
+    title: "16. Drink Water",
     src: "https://codepen.io/anna625/embed/XWqeaKy?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/XWqeaKy",
   },
   {
-    title: "16. Increment Counter",
+    title: "15. Increment Counter",
     src: "https://codepen.io/anna625/embed/LYmjMqR?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/LYmjMqR",
   },
   {
-    title: "15. Animated Navigation",
+    title: "14. Animated Navigation",
     src: "https://codepen.io/anna625/embed/GRdmKXJ?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/GRdmKXJ",
   },
   {
-    title: "14. Random Choice Picker",
+    title: "13. Random Choice Picker",
     src: "https://codepen.io/anna625/embed/mdLRvYr?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/mdLRvYr",
   },
   {
-    title: "13. FAQ Boxes",
+    title: "12. FAQ Boxes",
     src: "https://codepen.io/anna625/embed/GRdrgYV?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/GRdrgYV",
   },
   {
-    title: "12. Event KeyCodes",
+    title: "11. Event KeyCodes",
     src: "https://codepen.io/anna625/embed/xxjgbjj?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/xxjgbjj",
   },
   {
-    title: "11. Dad Jokes - API",
+    title: "10. Dad Jokes - API",
     src: "https://codepen.io/anna625/embed/abGBmyG?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/abGBmyG",
-  },
-  {
-    title: "10. FAQ Boxes",
-    src: "https://codepen.io/anna625/embed/GRdrgYV?default-tab=result&theme-id=dark",
-    href: "https://codepen.io/anna625/pen/GRdrgYV",
   },
   {
     title: "9. Form Wave Animation",
