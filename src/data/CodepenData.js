@@ -1,5 +1,10 @@
 export const CodepenProjects = [
   {
+    title: "19. Background Slider",
+    src: "https://codepen.io/anna625/embed/vYjWrgm?default-tab=result&theme-id=dark",
+    href: "https://codepen.io/anna625/pen/vYjWrgm",
+  },
+  {
     title: "18. Movie App",
     src: "https://codepen.io/anna625/embed/RwyjRem?default-tab=result&theme-id=dark",
     href: "https://codepen.io/anna625/pen/RwyjRem",
