@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Codepen } from "../components/Codepen";
 import { Spinner } from "../components/Spinner";
 import { FaArrowCircleUp } from "react-icons/fa";
-import { useScrollToTop } from "use-scroll-to-top";
+import { useScrollToTop } from "../hooks/useScrollToTop";
 
 const MiniProjects = () => {
   const [loading, setLoading] = useState(true);
@@ -33,9 +33,9 @@ const MiniProjects = () => {
           <Codepen />
         </section>
         <FaArrowCircleUp
-          className="fixed bottom-5 right-3 z-50 h-10 w-10 hover:scale-125 transition hover:-translate-y-1 scrolltotop"
+          className="fixed bottom-5 right-4 z-50 h-10 w-10 hover:scale-125 transition hover:-translate-y-1 scrolltotop"
           onClick={scrollTop}
-          style={{ display: showScroll ? "block" : "block" }}
+          style={{ display: showScroll ? "block" : "none" }}
         />
       </main>
       {loading ? <Spinner /> : null}
