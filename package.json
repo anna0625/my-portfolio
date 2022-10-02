@@ -17,6 +17,7 @@
     "react-iframe": "^1.8.4",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
+    "theme-change": "^2.2.0",
     "use-scroll-to-top": "^0.0.3",
     "web-vitals": "^2.1.4"
   },

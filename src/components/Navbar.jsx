@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 
 export const Navbar = ({ title }) => {
   const [openHamburger, setOpenHamburger] = useState(false);
+  const [themeChange, setThemeChange] = useState(false);
 
   const location = useLocation();
 
@@ -12,6 +13,16 @@ export const Navbar = ({ title }) => {
       return true;
     }
   };
+
+  useEffect(() => {
+    if (themeChange) {
+      const html = document.getElementById("html");
+      html.setAttribute("data-theme", "pastel");
+    } else {
+      const html = document.getElementById("html");
+      html.setAttribute("data-theme", "night");
+    }
+  }, [themeChange]);
 
   return (
     <nav className="navbar mb-12 shadow-lg text-neutral-content fixed z-50">
@@ -30,6 +41,12 @@ export const Navbar = ({ title }) => {
             {title}
           </Link>
         </div>
+        {/* Theme Toggle */}
+        <input
+          type="checkbox"
+          className="toggle toggle-primary"
+          onClick={() => setThemeChange((prevState) => !prevState)}
+        />
         {/* Links to pages (Middle Size)*/}
         <div className="flex-1 px-2 mx-2 hidden md:block">
           <div className="flex justify-end">
