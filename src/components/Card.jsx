@@ -15,7 +15,13 @@ export const Card = ({ id, title, paragraph, buttonText, buttonLink }) => {
         <h2 className="card-title">{title}</h2>
         <p className="min-h-12">{paragraph}</p>
         <div className="card-actions justify-end">
-          <button className="btn hover:animate-bounce">
+          <button
+            className={
+              id % 2 === 0
+                ? `btn hover:animate-bounce bg-secondary text-secondary-content`
+                : `btn hover:animate-bounce `
+            }
+          >
             <Link to={buttonLink}>{buttonText}</Link>
           </button>
         </div>
@@ -26,9 +32,9 @@ export const Card = ({ id, title, paragraph, buttonText, buttonLink }) => {
 
 Card.defaultProps = {
   id: 0,
-  title: "Junior Web Developer",
-  paragraph: "Create elegant webpages with HTML/CSS/JS and React.js",
-  buttonText: "My Projects",
+  title: "TITLE",
+  paragraph: "PARAGRAPH",
+  buttonText: "BUTTON",
 };
 
 Card.propTypes = {
