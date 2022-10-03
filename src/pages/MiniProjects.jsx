@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Codepen } from "../components/Codepen";
 import { Spinner } from "../components/Spinner";
 import { FaArrowCircleUp } from "react-icons/fa";
@@ -11,8 +11,12 @@ const MiniProjects = () => {
   if (loading) {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2000);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [loading]);
 
   return (
     <>

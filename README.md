@@ -12,7 +12,9 @@ React Project page
 
 1. include real data
 2. scrollup arrow icon
+3. New page for each projects (including what I learn - notes)
 
 Navbar
 
 1. add note pages
+2. add resume page

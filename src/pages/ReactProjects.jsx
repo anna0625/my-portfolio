@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { CardWithImg } from "../components/CardWithImg";
 import { projectSection } from "../data/ReactProjectData";
+import { FaArrowCircleUp } from "react-icons/fa";
+import { useScrollToTop } from "../hooks/useScrollToTop";
 
 const ReactProjects = () => {
+  const { showScroll, scrollTop } = useScrollToTop({ pageYOffset: 200 });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const cards = [];
   projectSection.forEach((card, id) => {
     cards.push(
@@ -19,12 +27,17 @@ const ReactProjects = () => {
   });
 
   return (
-    <section className="container mx-auto mt-32">
+    <main className="container mx-auto mt-32">
       <h1>Project Review</h1>
       <div className="mx-auto flex justify-center items-center flex-col md:flex-row md:flex-wrap max-w-5xl md:items-stretch">
         {cards}
       </div>
-    </section>
+      <FaArrowCircleUp
+        className="fixed bottom-5 right-4 z-50 h-10 w-10 hover:scale-125 transition hover:-translate-y-1 scrolltotop"
+        onClick={scrollTop}
+        style={{ display: showScroll ? "block" : "none" }}
+      />
+    </main>
   );
 };
 

@@ -13,7 +13,7 @@ export const projectSection = [
     imgUrl: "",
     buttonText: "Code",
     buttonLink: "#",
-    badges: [],
+    badges: ["react", "firebase-auth", "tailwindcss"],
   },
   {
     title: "Auth with Firebase",

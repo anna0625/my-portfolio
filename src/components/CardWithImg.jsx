@@ -13,7 +13,7 @@ export const CardWithImg = ({
 }) => {
   const badges_list = [];
   badges?.forEach((badge) => {
-    badges_list.push(<div className="badge badge-outline">{badge}</div>);
+    badges_list.push(<div className="badge badge-neutral">{badge}</div>);
   });
 
   return (
