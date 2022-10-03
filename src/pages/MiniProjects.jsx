@@ -24,7 +24,7 @@ const MiniProjects = () => {
         }
       >
         <h1>50 mini projects with HTML/CSS & JS</h1>
-        <p className="text-center mb-10">Learnt from Brady Traversy on Udemy</p>
+        <p className="text-center mb-10">Learnt from Brad Traversy on Udemy</p>
         <section className="mx-auto container min-h-screen">
           <Codepen />
         </section>

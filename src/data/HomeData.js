@@ -1,7 +1,7 @@
 export const heroSection = {
   title: "Junior Web Developer",
-  paragraph:
-    "I create elegant responsive webpages with React.js and TailwindCSS. :>",
+  paragraph: "I create elegant responsive webpages",
+  paragraph2: "with React.js and TailwindCSS. :>",
   buttonText: "clean code of this webpage.",
   buttonLink: "https://github.com/anna0625/my-profolio",
 };
@@ -9,7 +9,7 @@ export const heroSection = {
 export const projectSection = [
   {
     title: "React Projects",
-    paragraph: "React.js | Hooks",
+    paragraph: "Context API | Auth with Firebase | TailwindCSS | DaisyUI",
     buttonText: "GO TO",
     buttonLink: "/react-projects",
   },
@@ -21,7 +21,7 @@ export const projectSection = [
   },
   {
     title: "Python Games",
-    paragraph: "Pygame Library | Object-oriented Programming",
+    paragraph: "Pygame Library | Object-oriented Programming (OOP)",
     buttonText: "GO TO",
     buttonLink: "/python-games",
   },

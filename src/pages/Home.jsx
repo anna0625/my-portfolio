@@ -23,6 +23,7 @@ const Home = () => {
       <Hero
         title={heroSection.title}
         paragraph={heroSection.paragraph}
+        paragraph2={heroSection.paragraph2}
         buttonText={heroSection.buttonText}
         buttonLink={heroSection.buttonLink}
         extend={
