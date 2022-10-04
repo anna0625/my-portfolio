@@ -13,9 +13,9 @@ export const Hero = ({
     <div className="hero min-h-screen">
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h1 className="text-5xl font-bold">{title}</h1>
+          <h1 className="text-5xl font-bold mb-3">{title}</h1>
           <p className="pt-6">{paragraph}</p>
-          <p className="pb-6">{paragraph2}</p>
+          <p className="pb-6 mb-3">{paragraph2}</p>
           <button className="btn btn-primary hover:animate-bounce shadow-md">
             <a
               href={buttonLink}
