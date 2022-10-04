@@ -12,6 +12,7 @@ const MiniProjects = () => {
     window.scrollTo(0, 0);
   }, [loading]);
 
+  // deal with the delay of embedding codepens
   if (loading) {
     setTimeout(() => {
       setLoading(false);
@@ -22,9 +23,7 @@ const MiniProjects = () => {
     <>
       <main
         className={
-          !loading
-            ? `mt-32 overflow-x-hidden container scroll-smooth relative`
-            : `hidden`
+          !loading ? `mt-32 overflow-x-hidden container relative` : `hidden`
         }
       >
         <h1>50 mini projects with HTML/CSS & JS</h1>

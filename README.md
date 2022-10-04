@@ -6,15 +6,26 @@ Hi there, welcome to my profolio. After a few month of learning React and Tailwi
 
 Home page
 
-1. scrolldown arrow icon
+- [ ] scrolldown arrow icon
 
 React Project page
 
-1. include real data
-2. scrollup arrow icon
-3. New page for each projects (including what I learn - notes)
+- [ ] include real data
+- [ ] scrollup arrow icon
+- [ ] New page for each projects (including what I learn - notes)
 
 Navbar
 
-1. add note pages
-2. add resume page
+- [ ] add note pages
+- [ ] add resume page
+
+## Issues
+
+- [ ] Delay of fetching images on React Project page
+
+## Improvment
+
+State and Props management
+
+- [ ] Will apply useContext hook for props
+- [ ] Will apply useReucer hook for states

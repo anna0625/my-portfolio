@@ -33,7 +33,7 @@ export const CardWithImg = ({
       <figure>
         <img
           src={imgUrl}
-          alt="project"
+          alt={title}
           className="h-64 w-80 md:w-96 object-cover shadow-sm"
         />
       </figure>
@@ -106,7 +106,9 @@ CardWithImg.defaultProps = {
     "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=60",
   paragraph: "PARAGRAPH",
   buttonText: "BUTTON",
-  buttonLink: "",
+  buttonText2: "BUTTON2",
+  buttonLink: "#",
+  buttonLink2: "#",
   badges: [],
 };
 
@@ -116,6 +118,8 @@ CardWithImg.propTypes = {
   title: PropTypes.string,
   paragraph: PropTypes.string,
   buttonText: PropTypes.string,
+  buttonText2: PropTypes.string,
   buttonLink: PropTypes.string,
+  buttonLink2: PropTypes.string,
   badges: PropTypes.array,
 };

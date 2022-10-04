@@ -1,3 +1,4 @@
+// Will apply useReducer to manage states :>
 export const projectSection = [
   {
     title: "Reading List",

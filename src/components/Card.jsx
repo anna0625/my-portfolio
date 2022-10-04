@@ -8,7 +8,7 @@ export const Card = ({ id, title, paragraph, buttonText, buttonLink }) => {
       className={
         id % 2 === 0
           ? `bg-primary card w-80 md:w-96 text-primary-content my-2 md:mx-2 shadow-md`
-          : `bg-secondary card w-80 md:w-96 text-primary-content my-2 md:mx-2 shadow-md`
+          : `bg-secondary card w-80 md:w-96 text-secondary-content my-2 md:mx-2 shadow-md`
       }
     >
       <div className="card-body">
@@ -18,8 +18,8 @@ export const Card = ({ id, title, paragraph, buttonText, buttonLink }) => {
           <button
             className={
               id % 2 === 0
-                ? `btn hover:animate-bounce bg-secondary text-secondary-content`
-                : `btn hover:animate-bounce `
+                ? `btn hover:animate-bounce`
+                : `btn hover:animate-bounce`
             }
           >
             <Link to={buttonLink}>{buttonText}</Link>
