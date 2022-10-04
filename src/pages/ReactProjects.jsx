@@ -18,9 +18,12 @@ const ReactProjects = () => {
         key={id}
         id={id}
         title={card.title}
+        imgUrl={card.imgUrl}
         paragraph={card.paragraph}
-        buttonLink={card.buttonLink}
         buttonText={card.buttonText}
+        buttonText2={card.buttonText2}
+        buttonLink={card.buttonLink}
+        buttonLink2={card.buttonLink2}
         badges={card.badges}
       />
     );
@@ -29,7 +32,7 @@ const ReactProjects = () => {
   return (
     <main className="container mx-auto mt-32">
       <h1>Project Review</h1>
-      <div className="mx-auto flex justify-center items-center flex-col md:flex-row md:flex-wrap max-w-5xl md:items-stretch">
+      <div className="mx-auto flex justify-center items-center flex-col md:flex-row max-w-5xl md:items-stretch">
         {cards}
       </div>
       <FaArrowCircleUp

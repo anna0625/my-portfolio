@@ -7,8 +7,8 @@ export const Card = ({ id, title, paragraph, buttonText, buttonLink }) => {
     <div
       className={
         id % 2 === 0
-          ? `bg-primary card w-80 md:w-96 text-primary-content my-2 md:mx-2`
-          : `bg-secondary card w-80 md:w-96 text-primary-content my-2 md:mx-2`
+          ? `bg-primary card w-80 md:w-96 text-primary-content my-2 md:mx-2 shadow-md`
+          : `bg-secondary card w-80 md:w-96 text-primary-content my-2 md:mx-2 shadow-md`
       }
     >
       <div className="card-body">

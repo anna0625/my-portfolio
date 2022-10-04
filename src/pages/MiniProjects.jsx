@@ -8,15 +8,15 @@ const MiniProjects = () => {
   const [loading, setLoading] = useState(true);
   const { showScroll, scrollTop } = useScrollToTop({ pageYOffset: 200 });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [loading]);
+
   if (loading) {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [loading]);
 
   return (
     <>

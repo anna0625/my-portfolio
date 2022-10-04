@@ -16,7 +16,7 @@ export const Hero = ({
           <h1 className="text-5xl font-bold">{title}</h1>
           <p className="pt-6">{paragraph}</p>
           <p className="pb-6">{paragraph2}</p>
-          <button className="btn btn-primary hover:animate-bounce">
+          <button className="btn btn-primary hover:animate-bounce shadow-md">
             <a
               href={buttonLink}
               target="_blank"
