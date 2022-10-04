@@ -26,8 +26,10 @@ const MiniProjects = () => {
           !loading ? `mt-32 overflow-x-hidden container relative` : `hidden`
         }
       >
-        <h1>50 mini projects with HTML/CSS & JS</h1>
-        <p className="text-center mb-10">Learnt from Brad Traversy on Udemy</p>
+        <h1 className="mb-2">50 mini projects with HTML/CSS & JS</h1>
+        <h3 className="text-center mb-10">
+          Learnt from Brad Traversy on Udemy
+        </h3>
         <section className="mx-auto container min-h-screen">
           <Codepen />
         </section>
