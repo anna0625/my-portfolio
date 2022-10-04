@@ -15,7 +15,7 @@ export const projectSection = [
   },
   {
     title: "Mini Projects",
-    paragraph: "HTML | CSS | Javascript",
+    paragraph: "HTML | CSS | Javascript | TailwindCSS",
     buttonText: "GO TO",
     buttonLink: "/mini-projects",
   },

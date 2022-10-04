@@ -22,6 +22,7 @@ React Project page
 
 Mini Project page
 
+- [ ] include tailwindcss mini projects
 - [ ] include more ongoing mini ones
 
 Python Game page
