@@ -18,7 +18,7 @@ React Project page
 
 - [ ] include real data
 - [ ] scrollup arrow icon
-- [ ] New page for each projects (including what I learn - notes)
+- [ ] new page for each projects (including what I learn - notes)
 
 Mini Project page
 
@@ -27,19 +27,24 @@ Mini Project page
 
 Python Game page
 
-- Coming soon
+- coming soon
 
 Nodejs API page
 
-- Coming soon
+- coming soon
 
 ## Issues
 
-- [ ] Delay of fetching images on React Project page
+- [ ] delay of fetching images on React Project page
 
 ## Improvment
 
 State and Props management
 
-- [ ] Will apply useContext hook for props
-- [ ] Will apply useReucer hook for states
+- [ ] will apply useContext hook for props
+- [ ] will apply useReucer hook for states
+
+Layout
+
+- [ ] unify the font-size, such as h1, h2, h3 etc. and others
+- [ ] UI/UX research :>
