@@ -16,7 +16,7 @@ const MiniProjects = () => {
   if (loading) {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }
 
   return (

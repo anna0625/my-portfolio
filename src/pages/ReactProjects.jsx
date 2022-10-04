@@ -17,7 +17,7 @@ const ReactProjects = () => {
   if (loading) {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 3000);
   }
 
   const cards = [];
