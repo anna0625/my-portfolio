@@ -8,16 +8,29 @@ Home page
 
 - [ ] scrolldown arrow icon
 
+Navbar
+
+- [ ] add note pages
+- [ ] add resume page
+- [ ] add sidebar for some pages ?!
+
 React Project page
 
 - [ ] include real data
 - [ ] scrollup arrow icon
 - [ ] New page for each projects (including what I learn - notes)
 
-Navbar
+Mini Project page
 
-- [ ] add note pages
-- [ ] add resume page
+- [ ] include more ongoing mini ones
+
+Python Game page
+
+- Coming soon
+
+Nodejs API page
+
+- Coming soon
 
 ## Issues
 
