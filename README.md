@@ -1,6 +1,6 @@
-# My Profolio
+# My Portfolio
 
-Hi there, welcome to my profolio. After a few month of learning React and TailwinCSS, Finally I can come up with some ideas to build my own profile website! :>
+Hi there, welcome to my portfolio. After a few month of learning React and TailwinCSS, Finally I can come up with some ideas to build my own profile website! :>
 
 ## TODO
 
