@@ -6,6 +6,7 @@ import PythonGames from "./pages/PythonGames";
 import NodejsAPIs from "./pages/NodejsAPIs";
 import { Navbar } from "./components/Navbar";
 import AnimatedCursor from "react-animated-cursor";
+import Note from "./pages/Note";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
             ".link",
           ]}
         />
-        <div className="flex flex-col justify-between h-screen">
+        <div className="flex h-screen flex-col justify-between">
           <Navbar />
           <main className="container mx-auto pb-12">
             <Routes>
@@ -43,6 +44,7 @@ function App() {
               <Route path="/mini-projects" element={<MiniProjects />} />
               <Route path="/python-games" element={<PythonGames />} />
               <Route path="/nodejs-apis" element={<NodejsAPIs />} />
+              <Route path="/note/:category" element={<Note />} />
             </Routes>
           </main>
         </div>
