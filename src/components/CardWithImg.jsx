@@ -16,7 +16,7 @@ export const CardWithImg = ({
   const badges_list = [];
   badges?.forEach((badge, id) => {
     badges_list.push(
-      <div key={id} className="badge badge-neutral">
+      <div key={id} className="badge-neutral badge">
         {badge}
       </div>
     );
@@ -26,15 +26,15 @@ export const CardWithImg = ({
     <div
       className={
         id % 2 === 0
-          ? `bg-primary card w-80 text-primary-content my-3 md:mx-3 shadow-lg`
-          : `bg-secondary card w-80 text-secondary-content my-3 md:mx-3 shadow-lg`
+          ? `card my-3 w-80 bg-primary text-primary-content shadow-lg md:mx-3`
+          : `card my-3 w-80 bg-secondary text-secondary-content shadow-lg md:mx-3`
       }
     >
       <figure>
         <img
           src={imgUrl}
           alt={title}
-          className="h-64 w-80 md:w-96 object-cover shadow-sm"
+          className="h-64 w-80 object-cover shadow-sm transition delay-75 hover:scale-125 md:w-96"
         />
       </figure>
       <div className="card-body">
@@ -44,12 +44,12 @@ export const CardWithImg = ({
         </h2>
         <p className="mb-3">{paragraph}</p>
         <div className="card-actions justify-end">{badges_list}</div>
-        <div className="flex flex-row justify-evenly items-center">
+        <div className="flex flex-row items-center justify-evenly">
           <button
             className={
               id % 2 === 0
-                ? `btn hover:scale-110 hover:-translate-y-1 mt-3 bg-secondary text-secondary-content hover:text-primary`
-                : `btn hover:scale-110 hover:-translate-y-1 mt-3 bg-primary text-primary-content hover:text-secondary`
+                ? `btn mt-3 bg-secondary text-secondary-content hover:-translate-y-1 hover:scale-110 hover:text-primary`
+                : `btn mt-3 bg-primary text-primary-content hover:-translate-y-1 hover:scale-110 hover:text-secondary`
             }
           >
             <Link to={buttonLink}>{buttonText}</Link>
@@ -60,7 +60,7 @@ export const CardWithImg = ({
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6 inline ml-2"
+              className="ml-2 inline h-6 w-6"
             >
               <path
                 strokeLinecap="round"
@@ -72,8 +72,8 @@ export const CardWithImg = ({
           <button
             className={
               id % 2 === 0
-                ? `btn hover:scale-110 hover:-translate-y-1 mt-3 bg-secondary text-secondary-content hover:text-primary`
-                : `btn hover:scale-110 hover:-translate-y-1 mt-3 bg-primary text-primary-content hover:text-secondary`
+                ? `btn mt-3 bg-secondary text-secondary-content hover:-translate-y-1 hover:scale-110 hover:text-primary`
+                : `btn mt-3 bg-primary text-primary-content hover:-translate-y-1 hover:scale-110 hover:text-secondary`
             }
           >
             <Link to={buttonLink2}>{buttonText2}</Link>
@@ -84,7 +84,7 @@ export const CardWithImg = ({
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 inline ml-2"
+              className="ml-2 inline h-6 w-6"
             >
               <path
                 strokeLinecap="round"

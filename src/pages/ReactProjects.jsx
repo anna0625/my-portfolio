@@ -42,11 +42,11 @@ const ReactProjects = () => {
     <>
       <main className={!loading ? "container mx-auto mt-32" : "hidden"}>
         <h1>Project Review</h1>
-        <div className="mx-auto flex justify-center items-center flex-col md:flex-row max-w-5xl md:items-stretch">
+        <div className="mx-auto flex max-w-5xl flex-col items-center justify-center md:flex-row md:flex-wrap md:items-stretch">
           {cards}
         </div>
         <FaArrowCircleUp
-          className="fixed bottom-5 right-4 z-50 h-10 w-10 hover:scale-125 transition hover:-translate-y-1 scrolltotop"
+          className="scrolltotop fixed bottom-5 right-4 z-50 h-10 w-10 transition hover:-translate-y-1 hover:scale-125"
           onClick={scrollTop}
           style={{ display: showScroll ? "block" : "none" }}
         />
