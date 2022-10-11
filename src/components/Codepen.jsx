@@ -10,14 +10,15 @@ export const Codepen = () => {
 
   CodepenProjects.forEach((project, id) => {
     iframes.push(
-      <div className="group mb-5 mx-auto" key={id}>
+      <div className="group mx-auto mb-5" key={id}>
         <h2 className="md:hover:animate-bounce">{project.title}</h2>
-        <div className="bg-secondary my-5 px-5 py-2 rounded-xl mx-5">
+        <div className="my-5 mx-5 rounded-xl bg-secondary px-5 py-2">
           <iframe
-            className="h-96 my-3 w-80 md:w-[70vw] md:h-[70vh] shadow-md shadow-red-100 rounded-md"
+            className="my-3 h-96 w-80 rounded-md shadow-md shadow-red-100 md:h-[70vh] md:w-[70vw]"
             scrolling="no"
             title={project.title}
             src={project.src}
+            loading="lazy"
             framborder="no"
           >
             See the Pen <a href={project.href}>{project.title}</a> by Anna (
@@ -31,7 +32,7 @@ export const Codepen = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center flex-wrap">
+      <div className="flex flex-wrap items-center justify-center">
         {iframes}
       </div>
     </>

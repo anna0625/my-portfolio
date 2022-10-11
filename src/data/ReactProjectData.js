@@ -66,7 +66,7 @@ export const projectSection = [
     badges: ["react", "firestore", "material-ui"],
   },
   {
-    title: "Tesla LandingPage Clone",
+    title: "Tesla LandingPage",
     paragraph: "a tesla landingpage clone. (learn from youtube)",
     imgUrl:
       "https://github.com/anna0625/tesla-homepage-clone/blob/main/homepage-resize-screenshot.png?raw=true",

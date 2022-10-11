@@ -32,11 +32,13 @@ export const CardWithImg = ({
       }
     >
       <figure>
-        <img
-          src={imgUrl}
-          alt={title}
-          className="h-64 w-80 object-cover shadow-sm transition delay-75 hover:scale-110 md:w-96"
-        />
+        <a href={buttonLink} target="_blank" rel="noreferrer">
+          <img
+            src={imgUrl}
+            alt={title}
+            className="h-64 w-80 object-cover shadow-sm transition delay-75 hover:scale-110 md:w-96"
+          />
+        </a>
       </figure>
       <div className="card-body">
         <h2 className="card-title">
