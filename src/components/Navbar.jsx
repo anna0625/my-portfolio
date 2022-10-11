@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export const Navbar = ({ title }) => {
   const [openHamburger, setOpenHamburger] = useState(false);
-  const [themeChange, setThemeChange] = useState(false);
+  const [themeChange, setThemeChange] = useState(true);
 
   const location = useLocation();
 
@@ -25,17 +25,17 @@ export const Navbar = ({ title }) => {
   }, [themeChange]);
 
   return (
-    <nav className="navbar mb-12 shadow-lg text-neutral-content fixed z-50">
+    <nav className="navbar fixed z-50 mb-12 text-neutral-content shadow-lg">
       {/* Container */}
       <div className="container mx-auto">
         {/* Logo */}
-        <div className="flex-none px-2 mx-2">
+        <div className="mx-2 flex-none px-2">
           <Link
             to="/"
             className={
               pathMatchRoute("/")
-                ? "text-lg font-bold aling-middle align-middle text-primary btn"
-                : "text-lg font-bold aling-middle align-middle btn btn-ghost"
+                ? "aling-middle btn align-middle text-lg font-bold text-primary"
+                : "aling-middle btn btn-ghost align-middle text-lg font-bold"
             }
           >
             {title}
@@ -48,14 +48,14 @@ export const Navbar = ({ title }) => {
           onClick={() => setThemeChange((prevState) => !prevState)}
         />
         {/* Links to pages (Middle Size)*/}
-        <div className="flex-1 px-2 mx-2 hidden md:block">
+        <div className="mx-2 hidden flex-1 px-2 md:block">
           <div className="flex justify-end">
             <Link
               to="/react-projects"
               className={
                 pathMatchRoute("/react-projects")
-                  ? "btn btn-primary stn-sm rounded-btn mr-1"
-                  : "btn btn-ghost stn-sm rounded-btn mr-1"
+                  ? "stn-sm btn btn-primary rounded-btn mr-1"
+                  : "stn-sm btn btn-ghost rounded-btn mr-1"
               }
             >
               React Projects
@@ -64,28 +64,28 @@ export const Navbar = ({ title }) => {
               to="/mini-projects"
               className={
                 pathMatchRoute("/mini-projects")
-                  ? "btn btn-primary stn-sm rounded-btn mr-1"
-                  : "btn btn-ghost stn-sm rounded-btn mr-1"
+                  ? "stn-sm btn btn-primary rounded-btn mr-1"
+                  : "stn-sm btn btn-ghost rounded-btn mr-1"
               }
             >
               Mini Projects
             </Link>
             <Link
-              to="/python-games"
+              to="/javascript-games"
               className={
-                pathMatchRoute("/python-games")
-                  ? "btn btn-primary stn-sm rounded-btn mr-1"
-                  : "btn btn-ghost stn-sm rounded-btn mr-1"
+                pathMatchRoute("/javascript-games")
+                  ? "stn-sm btn btn-primary rounded-btn mr-1"
+                  : "stn-sm btn btn-ghost rounded-btn mr-1"
               }
             >
-              Python Games
+              JS Games
             </Link>
             <Link
               to="/nodejs-apis"
               className={
                 pathMatchRoute("/nodejs-apis")
-                  ? "btn btn-primary stn-sm rounded-btn mr-1"
-                  : "btn btn-ghost stn-sm rounded-btn mr-1"
+                  ? "stn-sm btn btn-primary rounded-btn mr-1"
+                  : "stn-sm btn btn-ghost rounded-btn mr-1"
               }
             >
               Nodejs APIs
@@ -96,7 +96,7 @@ export const Navbar = ({ title }) => {
         <div className="flex-1 md:hidden"></div>
         <div className="flex-none md:hidden">
           {/* Dropdown  */}
-          <div className="dropdown dropdown-end">
+          <div className="dropdown-end dropdown">
             <label
               tabIndex={0}
               className="btn btn-ghost btn-circle"
@@ -120,7 +120,7 @@ export const Navbar = ({ title }) => {
             {openHamburger && (
               <ul
                 tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow"
               >
                 <li>
                   <Link
@@ -144,12 +144,12 @@ export const Navbar = ({ title }) => {
                 </li>
                 <li>
                   <Link
-                    to="/python-games"
+                    to="/javascript-games"
                     className={
                       pathMatchRoute("/python-games") ? "text-primary" : null
                     }
                   >
-                    Python Games
+                    JS Games
                   </Link>
                 </li>
                 <li>

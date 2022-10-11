@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const CardWithImg = ({
   id,
   title,
   imgUrl,
+  createAt,
   paragraph,
   buttonText,
   buttonText2,
@@ -34,13 +35,13 @@ export const CardWithImg = ({
         <img
           src={imgUrl}
           alt={title}
-          className="h-64 w-80 object-cover shadow-sm transition delay-75 hover:scale-125 md:w-96"
+          className="h-64 w-80 object-cover shadow-sm transition delay-75 hover:scale-110 md:w-96"
         />
       </figure>
       <div className="card-body">
         <h2 className="card-title">
           {title}
-          <div className="badge badge-accent">NEW</div>
+          <div className="badge badge-accent">{createAt}</div>
         </h2>
         <p className="mb-3">{paragraph}</p>
         <div className="card-actions justify-end">{badges_list}</div>
@@ -78,7 +79,9 @@ export const CardWithImg = ({
                 : `btn mt-3 bg-primary text-primary-content hover:-translate-y-1 hover:scale-110 hover:text-secondary`
             }
           >
-            <Link to={buttonLink2}>{buttonText2}</Link>
+            <a href={buttonLink2} target="_blank" rel="noreferrer">
+              {buttonText2}
+            </a>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +94,7 @@ export const CardWithImg = ({
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
               />
             </svg>
           </button>

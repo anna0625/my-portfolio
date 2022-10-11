@@ -9,21 +9,21 @@ export const heroSection = {
 export const projectSection = [
   {
     title: "React Projects",
-    paragraph: "Context API | Auth with Firebase | TailwindCSS | DaisyUI",
+    paragraph: "React | Typescript | TailwindCSS | DaisyUI",
     buttonText: "GO TO",
     buttonLink: "/react-projects",
   },
   {
     title: "Mini Projects",
-    paragraph: "HTML | CSS | Javascript | TailwindCSS",
+    paragraph: "HTML | CSS | Javascript",
     buttonText: "GO TO",
     buttonLink: "/mini-projects",
   },
   {
-    title: "Python Games",
-    paragraph: "Pygame Library | Object-oriented Programming (OOP)",
+    title: "JS Games",
+    paragraph: "Javascript | DOM",
     buttonText: "GO TO",
-    buttonLink: "/python-games",
+    buttonLink: "/javascript-games",
   },
   {
     title: "Node.js APIs",

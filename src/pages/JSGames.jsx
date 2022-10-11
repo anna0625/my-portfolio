@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { CardWithImg } from "../components/CardWithImg";
-import { projectSection } from "../data/ReactProjectData";
+import React, { useState, useEffect } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { useScrollToTop } from "../hooks/useScrollToTop";
 import { Spinner } from "../components/Spinner";
+import { CardWithImg } from "../components/CardWithImg";
+import { projectSection } from "../data/JSGamesData";
 
-const ReactProjects = () => {
+const JSGames = () => {
   const [loading, setLoading] = useState(true);
   const { showScroll, scrollTop } = useScrollToTop({ pageYOffset: 200 });
 
@@ -39,6 +39,7 @@ const ReactProjects = () => {
       />
     );
   });
+
   return (
     <>
       <main className={!loading ? "container mx-auto mt-32" : "hidden"}>
@@ -57,4 +58,4 @@ const ReactProjects = () => {
   );
 };
 
-export default ReactProjects;
+export default JSGames;
