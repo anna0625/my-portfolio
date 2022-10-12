@@ -4,30 +4,30 @@ Hi there, welcome to my portfolio. After a few month of learning React and Tailw
 
 ## TODO
 
-Home page
+### Home page
 
 - [ ] scrolldown arrow icon
 
-Navbar
+### Navbar
 
 - [ ] add note pages
 - [ ] add resume page
 - [ ] add sidebar for some pages ?!
 
-React Project page
+### React Project page
 
 - [ ] include real data
 - [ ] scrollup arrow icon
 - [ ] new page for each projects (including what I learn - notes)
 
-Mini Project page
+### Mini Project page
 
 - [ ] include tailwindcss mini projects
 - [ ] include more ongoing mini ones
 
-Python Game page
+### JS Game page
 
-- coming soon
+- [ ] include more
 
 Nodejs API page
 
@@ -39,12 +39,20 @@ Nodejs API page
 
 ## Improvment
 
-State and Props management
+### State and Props management
 
 - [ ] will apply useContext hook for props
 - [ ] will apply useReucer hook for states
 
-Layout
+### Layout
 
 - [ ] unify the font-size, such as h1, h2, h3 etc. and others
 - [ ] UI/UX research :>
+
+### Design Pattern
+
+- [ ] presentational / container pattern for component
+- presentational component, that cares about how data is shown to the user.
+- container component, that cares about what data is shown to the user
+
+- [javascript patterns](https://javascriptpatterns.vercel.app/patterns/react-patterns/conpres)
