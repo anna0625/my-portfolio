@@ -7,8 +7,8 @@ export const Card = ({ id, title, paragraph, buttonText, buttonLink }) => {
     <div
       className={
         id % 2 === 0
-          ? `bg-primary card w-80 md:w-96 text-primary-content my-2 md:mx-2 shadow-md`
-          : `bg-secondary card w-80 md:w-96 text-secondary-content my-2 md:mx-2 shadow-md`
+          ? `card my-2 w-80 bg-primary text-primary-content shadow-md md:mx-2 md:w-96`
+          : `card my-2 w-80 bg-secondary text-secondary-content shadow-md md:mx-2 md:w-96`
       }
     >
       <div className="card-body">
@@ -35,6 +35,7 @@ Card.defaultProps = {
   title: "TITLE",
   paragraph: "PARAGRAPH",
   buttonText: "BUTTON",
+  buttonLink: "/",
 };
 
 Card.propTypes = {
@@ -42,4 +43,5 @@ Card.propTypes = {
   title: PropTypes.string,
   paragraph: PropTypes.string,
   buttonText: PropTypes.string,
+  buttonLink: PropTypes.string,
 };

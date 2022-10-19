@@ -19,7 +19,7 @@ export const Codepen = () => {
             title={project.title}
             src={project.src}
             loading="lazy"
-            framborder="no"
+            frameBorder="no"
           >
             See the Pen <a href={project.href}>{project.title}</a> by Anna (
             <a href="https://codepen.io/anna625">@anna625</a>) on{" "}

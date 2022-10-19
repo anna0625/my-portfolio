@@ -43,6 +43,7 @@ Hero.defaultProps = {
   buttonText: "button text",
   buttonLink: "#",
   extend: null,
+  extend2: null,
 };
 
 Hero.propTypes = {
@@ -52,4 +53,5 @@ Hero.propTypes = {
   buttonText: PropTypes.string,
   buttonLink: PropTypes.string,
   extend: PropTypes.any,
+  extend2: PropTypes.any,
 };

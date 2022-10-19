@@ -123,6 +123,7 @@ CardWithImg.propTypes = {
   id: PropTypes.any,
   imgUrl: PropTypes.string,
   title: PropTypes.string,
+  createAt: PropTypes.string,
   paragraph: PropTypes.string,
   buttonText: PropTypes.string,
   buttonText2: PropTypes.string,
